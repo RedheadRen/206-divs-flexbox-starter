@@ -99,44 +99,42 @@ textarea {
 html {
   background-color: rgb(65, 68, 71);
   height: 100%;
+  width: 100%;
 }
 
 body {
+  color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
-  font-size: 1em;
+  font-weight: 700;
   height: 100%;
+  padding: 2em;
 }
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
-  border-bottom: 2px solid rgb(32, 240, 32);
-  border-top: 2px solid rgb(32, 240, 32);
+  align-items: center;
   display: flex;
-  font-weight: 400;
+  flex-flow: row wrap;
   justify-content: space-between;
-  padding-bottom: 20px;
-  padding-top: 20px;
 }
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   align-items: center;
   color: #fff;
-  line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: rgb(65, 68, 71);
-  height: 300px;
+  display: flex;
+  font-size: 1.25em;
+  height: auto;
   justify-content: center;
+  line-height: 1.5em;
   width: 30%;
 }
 
-.div-2 {
-    border-left: 2px solid rgb(32, 240, 32);
-    border-right: 2px solid rgb(32, 240, 32);
-    padding-left: 25px;
-    padding-right: 25px;
+.wrapper span {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
 }
+
 
 
 /* ==========================================================================
@@ -218,6 +216,16 @@ body {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media all and (min-width: 1200px) {
+    .div-1, .div-2, .div-3 {
+        flex-basis: 30%;
+    }
+
+    .div-1, .div-2 {
+        border-right: 2px solid rgb(41, 240, 41);
+        padding-right: 30px;
+    }
+}
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
