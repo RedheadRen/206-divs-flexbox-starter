@@ -104,10 +104,38 @@ html {
 
 body {
   color: #fff;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 700;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 400;
   height: 100%;
   padding: 2em;
+}
+
+header,
+footer {
+    border-top: 2px solid #fa0075;
+    border-bottom: 2px solid #fa0075;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    height: 80px;
+    width: 100%;
+}
+
+footer {
+    border-bottom: 2px solid rgb(41, 240, 41);
+    border-top: 2px solid rgb(41, 240, 41);
+}
+
+main {
+    border-bottom: 2px solid rgb(41, 240, 41);
+    font-size: 2em;
+    text-align: center;
+}
+header,
+footer,
+main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .wrapper {
@@ -127,15 +155,23 @@ body {
   height: auto;
   justify-content: center;
   line-height: 1.5em;
+  text-align: justify;
   width: 30%;
 }
 
 .wrapper span {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.3em;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
 }
 
-
+.footer-wrapper,
+a {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 15px;
+}
 
 /* ==========================================================================
    Helper classes
